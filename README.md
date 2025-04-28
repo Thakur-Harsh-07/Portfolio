@@ -52,12 +52,7 @@ yarn install
 npm start
 # or
 yarn start
-```
 
-
-
-
-```
 
 
 
