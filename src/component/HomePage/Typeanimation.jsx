@@ -12,11 +12,11 @@ const TypeAnimation = () => {
                     'Web Developer',
                     'React Developer'
                 ]}
-                loop={true}
+                loop={0}               // 0 = infinite loop
                 cursor
-                cursorStyle='|'
-                typeSpeed={80}
-                deleteSpeed={80}
+                cursorStyle="|"
+                typeSpeed={70}
+                deleteSpeed={50}
                 delaySpeed={1000}
             />
         </div>
