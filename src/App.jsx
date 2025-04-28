@@ -7,7 +7,7 @@ import Project from './component/Pages/Project'
 import Home from './component/Pages/Home'
 import Skills from './component/Pages/Skills'
 import Contact from './component/Pages/Contact'
-import{ BrowserRouter as Router ,Route,Routes} from 'react-router-dom'
+import { HashRouter as Router, Route, Routes } from 'react-router-dom'
 import Footer from './component/Common/Footer'
 import { Toaster } from 'react-hot-toast'
 
@@ -24,7 +24,6 @@ function App() {
         </Routes>
       </Router>
       <Footer/>
-      
     </div>
   )
 }
