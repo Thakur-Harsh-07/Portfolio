@@ -12,7 +12,7 @@ export default defineConfig({
   },
   server: {
     proxy: {
-      "/api": "http://localhost:4000/", // the address that u serve in the backend 
+      "/api": "https://portfolio-jhx3.onrender.com/", // the address that u serve in the backend 
     },
   },
 })
