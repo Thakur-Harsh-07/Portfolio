@@ -6,14 +6,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: 'dist',
-    assetsDir: 'assets',
-    manifest: true,
-    rollupOptions: {
-      input: './src/main.jsx',
-      output: {
-        manualChunks: undefined
-      }
-    }
+    emptyOutDir: true
   },
   server: {
     proxy: {
