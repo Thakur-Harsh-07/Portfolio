@@ -1,0 +1,55 @@
+import React from 'react'
+import { SiGithub } from "react-icons/si";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
+const ProjectCard = ({name, link, github, logo}) => {
+  return (
+    <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 
+                    hover:bg-gray-700/50 transition-all duration-300 
+                    transform hover:-translate-y-2 border border-gray-700 
+                    shadow-lg group min-h-[400px] w-full">
+        {/* Project Name */}
+        <div className="mb-6">
+            <h2 className="text-3xl font-bold text-blue-500 group-hover:text-blue-400 transition-colors border-b ">
+                {name}
+            </h2>
+        </div>
+
+        {/* Project Image */}
+        <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
+            <img 
+                src={logo} 
+                alt={`${name} preview`}
+                className="w-full h-full object-cover transform  
+                         group-hover:scale-110 transition-all duration-500"
+            />
+            <div className="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-500"></div>
+        </div>
+
+        {/* Links */}
+        <div className="flex justify-center gap-8 mt-6">
+            <a 
+                href={link}
+                target="_blank"
+               
+                className="flex items-center gap-2 text-blue-500 hover:text-blue-400 transition-colors text-lg"
+            >
+                <FaExternalLinkAlt className="text-xl text-white" />
+                <span className='text-white'>Live Demo</span>
+            </a>
+            <a 
+                href={github}
+                target="_blank"
+                
+                className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-lg"
+            >
+                <SiGithub className="text-xl" />
+                <span>Source Code</span>
+            </a>
+        </div>
+        
+    </div>
+  )
+}
+
+export default ProjectCard
