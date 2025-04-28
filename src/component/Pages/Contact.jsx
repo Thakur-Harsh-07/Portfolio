@@ -24,7 +24,7 @@ const Contact = ()=>{
         setIsSubmitting(true);
 
         try {
-            const response = await fetch('http://localhost:4000/api/v1/contactUs', {
+            const response = await fetch('https://portfolio-jhx3.onrender.com/api/v1/contactUs', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
