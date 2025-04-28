@@ -20,10 +20,10 @@ A modern, responsive portfolio website built with React, Tailwind CSS.
 - Tailwind CSS
 - LeetCode Stats API
 ## Backend-
--Node.js
--Express.js
--MongoDB
--Nodemailer
+- Node.js
+- Express.js
+- MongoDB
+- Nodemailer
 
 ## Getting Started
 
