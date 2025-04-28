@@ -52,13 +52,4 @@ yarn install
 npm start
 # or
 yarn start
-
-
-
-
-
-
-
-
-
-
+4.Live Link https://portfolio-vercelharsh.vercel.app/
