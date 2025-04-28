@@ -8,12 +8,14 @@ export default defineConfig({
     manifest: true,
     rollupOptions: {
       input: './src/main.jsx',
+      external: ['@rollup/rollup-linux-x64-gnu'],
     },
   },
   server: {
     proxy: {
       "/api": "http://localhost:4000/", // the address that u serve in the backend 
     },
+    port: 3000,
   },
 })
 
