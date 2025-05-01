@@ -6,7 +6,7 @@ const ProjectCard = ({name, link, github, logo}) => {
   return (
     <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 
                     hover:bg-gray-700/50 transition-all duration-300 
-                    transform hover:-translate-y-2 border border-gray-700 
+                    transform hover:-translate-y-2 border border-blue-700 
                     shadow-lg group min-h-[400px] w-full">
         {/* Project Name */}
         <div className="mb-6">
