@@ -12,7 +12,7 @@ const Skills = () => {
     const fetchStats = async () => {
         setLoading(true);
         try {
-            const response = await fetch('https://leetcode-stats-api.herokuapp.com/HarshVardhanSinghChauhan');
+            const response = await fetch('https://leetcode-api-faisalshohag.vercel.app/HarshVardhanSinghChauhan');
             const data = await response.json();
             setStats(data);
         } catch (error) {
@@ -80,7 +80,7 @@ const Skills = () => {
                         
                     </div>
                     <img
-                        src={`https://leetcard.jacoblin.cool/HarshVardhanSinghChauhan?theme=dark`}
+                        src={`https://leetcard.jacoblin.cool/HarshVardhanSinghChauhan?font=volkhov&theme=dark&extension=heatmap`}
                         alt="LeetCode Stats"
                         className="mx-auto rounded-lg shadow-lg border border-blue-500 transition-all duration-300 
                             transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-400"
