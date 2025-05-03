@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "concurrently": "^9.1.2",
+    "framer-motion": "^12.9.4",
     "react": "^19.0.0",
     "react-calendar-heatmap": "^1.10.0",
     "react-dom": "^19.0.0",
