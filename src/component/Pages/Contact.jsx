@@ -55,7 +55,7 @@ const Contact = ()=>{
         <div className="mt-[130px] flex justify-center items-start px-4">
             <div className="flex flex-col md:flex-row gap-8 max-w-[1200px] w-full mb-12">
                 {/* Contact Form */}
-                <div className="flex-1 bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-gray-600 transition-colors">
+                <div className="flex-1 bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-blue-600 hover:shadow-blue-600/20 transition-colors hover:shadow-xl  font-bold">
                     <h1 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-center">
                         Get In Touch
                     </h1>
@@ -114,7 +114,7 @@ const Contact = ()=>{
                 </div>
 
                 {/* Social Links */}
-                <div className="md:w-[400px] bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-gray-600 transition-colors h-fit">
+                <div className="md:w-[400px] bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-blue-600 hover:shadow-blue-600/20 hover:shadow-xl transition-colors h-fit">
                     <h1 className="text-3xl md:text-4xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent text-center">
                         Contact Me
                     </h1>
