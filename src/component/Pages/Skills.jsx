@@ -2,8 +2,7 @@ import React, { useEffect, useState } from "react";
 import { SkillsData } from "../../Data/SkillsData";
 import Card from "../Card";
 import Spinner from "../Common/Spinner";
-
-
+import { motion } from "framer-motion";
 const Skills = () => {
 
     const [stats, setStats] = useState([]);
@@ -28,7 +27,16 @@ const Skills = () => {
     
 
     return (
-        <div className="py-12 px-4 sm:px-6 md:px-8 flex flex-col items-center">
+        <motion.div className="py-12 px-4 sm:px-6 md:px-8 flex flex-col items-center"
+            initial={{ opacity: 0, x: -60, scale: 0.95 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{
+            duration: 0.8,
+            delay: 0.4,
+            type: "spring",
+            stiffness: 60,
+            damping: 12
+            }}>
             {/* Header */}
             <div className="text-center mb-12 flex flex-col items-center justify-center w-full">
                 <h2 className="text-3xl sm:text-4xl font-bold text-blue-500 mb-4">
@@ -89,7 +97,7 @@ const Skills = () => {
                 </div>
             )}
         
-        </div>
+        </motion.div>
     );
 };
 

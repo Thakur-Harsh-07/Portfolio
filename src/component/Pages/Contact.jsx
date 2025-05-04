@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { CgMail } from "react-icons/cg";
 
 import { toast } from "react-hot-toast";
-
+import{motion} from "framer-motion"
 
 const Contact = ()=>{
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -52,7 +52,16 @@ const Contact = ()=>{
     };
 
     return(
-        <div className="mt-[130px] flex justify-center items-start px-4">
+        <motion.div className="mt-[130px] flex justify-center items-start px-4"
+            initial={{ opacity: 0, x: -60, scale: 0.95 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            transition={{
+            duration: 0.8,
+            delay: 0.4,
+            type: "spring",
+            stiffness: 60,
+            damping: 12
+            }}>
             <div className="flex flex-col md:flex-row gap-8 max-w-[1200px] w-full mb-12">
                 {/* Contact Form */}
                 <div className="flex-1 bg-gray-800/50 p-8 rounded-2xl backdrop-blur-sm border border-gray-700 hover:border-blue-600 hover:shadow-blue-600/20 transition-colors hover:shadow-xl  font-bold">
@@ -149,7 +158,7 @@ const Contact = ()=>{
             
             </div>
           
-        </div>
+        </motion.div>
     )
 }
 
