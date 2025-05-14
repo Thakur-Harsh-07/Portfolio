@@ -4,8 +4,8 @@ import { IoMdDownload } from "react-icons/io";
 const Resume = ()=>{
     const handleDownload=()=>{
         const link = document.createElement('a');
-        // https://drive.google.com/file/d/1QC8Ay_IIW7ajHJLxi7-K57V22ZK66ZJd/view?usp=sharing
-        link.href = 'https://drive.google.com/uc?export=download&id=1QC8Ay_IIW7ajHJLxi7-K57V22ZK66ZJd';
+        // https://drive.google.com/file/d/1yd6Sz2S0bGItqC46IW6wHXey62imWZUh/view?usp=sharing
+        link.href = 'https://drive.google.com/uc?export=download&id=1yd6Sz2S0bGItqC46IW6wHXey62imWZUh';
         link.setAttribute('download', 'Resume.pdf');
         document.body.appendChild(link);
         link.click();
