@@ -15,5 +15,9 @@ export const NavLink = [
       title: "Contact",
       path: "/contact",
     },
+    {
+      title:"Certificates",
+      path:"/certificates"
+    }
     
   ];

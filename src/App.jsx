@@ -10,6 +10,7 @@ import Contact from './component/Pages/Contact'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Footer from './component/Common/Footer'
 import { Toaster } from 'react-hot-toast'
+import Certificates from './component/Pages/Certificates'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}/>
           <Route path="/skills" element={<Skills/>}/>
           <Route path="/project" element={<Project/>}/>
+          <Route path='/certificates' element ={<Certificates/>}/>
         </Routes>
       </Router>
       <Footer/>
