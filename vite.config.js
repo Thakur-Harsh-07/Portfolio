@@ -13,6 +13,6 @@ export default defineConfig({
       "/api": "https://portfolio-jhx3.onrender.com/", // the address that u serve in the backend 
     },
   },
-  base: './'
+  base: '/'
 })
 
