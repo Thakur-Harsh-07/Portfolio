@@ -3,7 +3,7 @@ import dsa from "../Asset/Image/dsa.png"
 import coding from "../Asset/Image/codinground.jpg"
 import Arjuna from "../Asset/Image/Arjuna.jpg"
 import nexus from "../Asset/Image/nexus.jpg"
-
+import flipkart from '../Asset/Image/Flipkart.jpg'
 export const CertificateData =[
     {
         id:1,
@@ -24,5 +24,9 @@ export const CertificateData =[
     {
         id:5,
         logo:nexus
+    },
+    {
+        id:6,
+        logo:flipkart
     }
 ]
