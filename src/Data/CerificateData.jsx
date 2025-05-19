@@ -1,18 +1,28 @@
 import bdcertificate from "../Asset/Image/Backend Certificate.png"
 import dsa from "../Asset/Image/dsa.png"
-
 import coding from "../Asset/Image/codinground.jpg"
+import Arjuna from "../Asset/Image/Arjuna.jpg"
+import nexus from "../Asset/Image/nexus.jpg"
+
 export const CertificateData =[
     {
         id:1,
-        logo:dsa
+        logo:bdcertificate
     },
     {
         id:2,
-        logo:bdcertificate
+        logo:dsa
     },
     {
         id:3,
         logo:coding
+    },
+    {
+        id:4,
+        logo:Arjuna
+    },
+    {
+        id:5,
+        logo:nexus
     }
 ]
