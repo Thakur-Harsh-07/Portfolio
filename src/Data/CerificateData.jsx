@@ -5,6 +5,7 @@ import Arjuna from "../Asset/Image/Arjuna.jpg"
 import nexus from "../Asset/Image/nexus.jpg"
 import flipkart from '../Asset/Image/Flipkart.jpg'
 import IBM from "../Asset/Image/IBM.jpg"
+import Naukri from "../Asset/Image/Naukri.png"
 export const CertificateData =[
     {
         id:1,
@@ -33,5 +34,9 @@ export const CertificateData =[
     {
         id:7,
         logo:IBM
+    },
+    {
+        id:8,
+        logo:Naukri
     }
 ]
