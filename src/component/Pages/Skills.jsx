@@ -3,6 +3,7 @@ import { SkillsData } from "../../Data/SkillsData";
 import Card from "../Card";
 import Spinner from "../Common/Spinner";
 import { motion } from "framer-motion";
+import { SiLeetcode } from "react-icons/si";
 const Skills = () => {
 
     const [stats, setStats] = useState([]);
@@ -65,7 +66,11 @@ const Skills = () => {
                 ) : (
 
                 <div className="mt-12 text-center">
-                    <h2 className="text-2xl font-bold text-blue-500 mb-6">LeetCode Stats</h2>
+                    <div className="flex items-center gap-4 justify-center">
+                        <SiLeetcode className="h-8 w-8 text-white mb-6" />
+                        <h2 className="text-2xl font-bold text-blue-500 mb-6">LeetCode Stats</h2>
+                    </div>
+                    
                     <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-8">
                         <div className="bg-gray-800 p-4 rounded-lg hover:scale-105 transition-all duration-300 border border-blue-500 hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-400">
                             <p className="text-xl font-semibold text-white">{stats.totalSolved}</p>
@@ -88,7 +93,7 @@ const Skills = () => {
                         
                     </div>
                     <img
-                        src={`https://leetcard.jacoblin.cool/HarshVardhanSinghChauhan?font=volkhov&theme=dark&extension=heatmap`}
+                        src={`https://leetcard.jacoblin.cool/HarshVardhanSinghChauhan?font=volkhov&theme=catppuccinMocha&extension=heatmap`}
                         alt="LeetCode Stats"
                         className="mx-auto rounded-lg shadow-lg border border-blue-500 transition-all duration-300 
                             transform hover:scale-105 hover:shadow-xl hover:shadow-blue-500/20 hover:border-blue-400"
