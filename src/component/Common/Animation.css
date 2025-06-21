@@ -12,22 +12,66 @@
 /* Snowflake style */
 .snowflake {
   position: absolute;
-  top: -10px;
   color: #fff;
   font-size: 1.5em;
-  animation: fall 10s linear infinite, drift 3s ease-in-out infinite;
   user-select: none;
+  pointer-events: none;
   opacity: 0.8;
+  animation-name: fall, drift;
+  animation-timing-function: linear, ease-in-out;
+  animation-iteration-count: infinite, infinite;
 }
 
-.snowflake:nth-child(1) { left: 10%; animation-delay: 0s; }
-.snowflake:nth-child(2) { left: 20%; animation-delay: 2s; }
-.snowflake:nth-child(3) { left: 30%; animation-delay: 4s; }
-.snowflake:nth-child(4) { left: 40%; animation-delay: 1s; }
-.snowflake:nth-child(5) { left: 50%; animation-delay: 3s; }
-.snowflake:nth-child(6) { left: 60%; animation-delay: 5s; }
-.snowflake:nth-child(7) { left: 70%; animation-delay: 2s; }
-.snowflake:nth-child(8) { left: 80%; animation-delay: 6s; }
+/* Random left, delay, duration, and top offset */
+.snowflake:nth-child(1) {
+  left: 5%;
+  top: -5%;
+  animation-delay: 0s, 0s;
+  animation-duration: 10s, 3s;
+}
+.snowflake:nth-child(2) {
+  left: 15%;
+  top: -12%;
+  animation-delay: 2s, 1s;
+  animation-duration: 12s, 4s;
+}
+.snowflake:nth-child(3) {
+  left: 25%;
+  top: -20%;
+  animation-delay: 1s, 0.5s;
+  animation-duration: 11s, 3.5s;
+}
+.snowflake:nth-child(4) {
+  left: 35%;
+  top: -8%;
+  animation-delay: 3s, 2s;
+  animation-duration: 9s, 5s;
+}
+.snowflake:nth-child(5) {
+  left: 45%;
+  top: -15%;
+  animation-delay: 0.5s, 1.5s;
+  animation-duration: 13s, 4s;
+}
+.snowflake:nth-child(6) {
+  left: 60%;
+  top: -18%;
+  animation-delay: 2.5s, 0.5s;
+  animation-duration: 12s, 3s;
+}
+.snowflake:nth-child(7) {
+  left: 70%;
+  top: -25%;
+  animation-delay: 1.2s, 1s;
+  animation-duration: 14s, 4s;
+}
+.snowflake:nth-child(8) {
+  left: 80%;
+  top: -10%;
+  animation-delay: 4s, 2s;
+  animation-duration: 10s, 3s;
+}
+
 
 @keyframes fall {
   0% { top: -10%; opacity: 0; }
