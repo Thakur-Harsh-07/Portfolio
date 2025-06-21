@@ -5,13 +5,14 @@
   text-align: center;
 }
 
+/* App.css */
+
+/* Background and Global Styles */
 body,
 html {
   width: 100%;
-  
   margin: 0;
   background-color: #222;
-  
   background: linear-gradient(
     135deg,
     #1a1a1a 0%,
@@ -22,14 +23,25 @@ html {
   );
   background-size: 500% 500%;
   animation: gradientFlow 15s ease infinite;
-
-
-
   color: #fff;
   overflow-x: hidden;
   
-  
 }
+
+/* Gradient animation */
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
 
 html,
 body,
@@ -74,3 +86,4 @@ body,
 .read-the-docs {
   color: #888;
 }
+
