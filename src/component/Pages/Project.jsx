@@ -19,7 +19,9 @@ const Project = ()=>{
                 <h1 className="text-4xl md:text-5xl font-bold text-blue-400  bg-clip-text border-b-2 border-blue-700 pb-2">
                     My Projects
                 </h1>
-                <div className="flex flex-col gap-16 w-full max-w-[600px] min-h-[600px]">
+            
+                
+                <div className="flex flex-col lg:flex-row gap-16 w-full">
                     {ProjectData.map((Project)=>{
                         return(
                             <ProjectCard
@@ -28,6 +30,8 @@ const Project = ()=>{
                                 link={Project.link}
                                 github={Project.github}
                                 logo={Project.logo}
+                                desc= {Project.desc}
+                                tech = {Project.tech}
                             />
                         )
                     })}

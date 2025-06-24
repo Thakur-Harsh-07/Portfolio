@@ -1,8 +1,10 @@
 import React from 'react'
 import { SiGithub } from "react-icons/si";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaExternalLinkAlt, FaStar} from "react-icons/fa";
+import { desc } from 'framer-motion/client';
 
-const ProjectCard = ({name, link, github, logo}) => {
+
+const ProjectCard = ({name, link, github, logo, desc, tech}) => {
   return (
     <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 
                     hover:bg-gray-700/50 transition-all duration-300 
@@ -13,6 +15,12 @@ const ProjectCard = ({name, link, github, logo}) => {
             <h2 className="text-3xl font-bold text-blue-500 group-hover:text-blue-400 transition-colors border-b ">
                 {name}
             </h2>
+        </div>
+        {/* desc */}
+         <div className="mb-4 px-2">
+            <p className="text-sm text-white mt-2 line-clamp-2 font-bold">
+                {desc}
+            </p>
         </div>
 
         {/* Project Image */}
@@ -25,6 +33,28 @@ const ProjectCard = ({name, link, github, logo}) => {
             />
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-500"></div>
         </div>
+        {/* tech */}
+        
+        <div className='flex gap-3 items-center justify-center'>
+            <h3 className="text-sm font-semibold text-white mb-1 flex items-center gap-1 hover:font-bold">
+               <FaStar className="text-yellow-500 text-xs" />
+                   Technologies
+             </h3> 
+            <div className="flex flex-wrap gap-1">
+          {tech.map((tech, index) => (
+            <span
+              key={index}
+              className="px-2 py-1 text-xs 
+                         text-white rounded-full border border-blue-700 bg-blue-500 hover:bg-blue-900 transition-all duration-200"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+        </div>
+        
+       
+       
 
         {/* Links */}
         <div className="flex justify-center gap-8 mt-6">
