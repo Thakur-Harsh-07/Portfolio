@@ -19,7 +19,7 @@ const Project = ()=>{
                 <h1 className="text-4xl md:text-5xl font-bold text-blue-400  bg-clip-text border-b-2 border-blue-700 pb-2">
                     My Projects
                 </h1>
-            
+                
                 
                 <div className="flex flex-col lg:flex-row gap-16 w-full">
                     {ProjectData.map((Project)=>{

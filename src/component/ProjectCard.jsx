@@ -41,16 +41,15 @@ const ProjectCard = ({name, link, github, logo, desc, tech}) => {
                    Technologies
              </h3> 
             <div className="flex flex-wrap gap-1">
-          {tech.map((tech, index) => (
-            <span
-              key={index}
-              className="px-2 py-1 text-xs 
-                         text-white rounded-full border border-blue-700 bg-blue-500 hover:bg-blue-900 transition-all duration-200"
-            >
-              {tech}
-            </span>
-          ))}
-        </div>
+              {tech.map((tech, index) => (
+                <span
+                    key={index}
+                    className="px-2 py-1 text-xs 
+                    text-white rounded-full border border-blue-700 bg-blue-500 hover:bg-blue-900 transition-all duration-200">
+                    {tech}
+                </span>
+                ))}
+            </div>
         </div>
         
        
