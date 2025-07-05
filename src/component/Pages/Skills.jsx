@@ -67,7 +67,10 @@ const Skills = () => {
 
                 <div className="mt-12 text-center">
                     <div className="flex items-center gap-4 justify-center">
-                        <SiLeetcode className="h-8 w-8 text-white mb-6" />
+                         <a href="https://leetcode.com/u/HarshVardhanSinghChauhan/">
+                         <SiLeetcode className="h-8 w-8 text-white mb-6" />
+                         </a>
+                        
                         <h2 className="text-2xl font-bold text-blue-500 mb-6">LeetCode Stats</h2>
                     </div>
                     
