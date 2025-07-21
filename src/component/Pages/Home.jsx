@@ -93,7 +93,7 @@ const Home = ()=>{
                         I fell in love with programming and I am a quick learner. I am a passionate developer and I am always looking for new challenges.
                     </p>
                     <p className="text-gray-300 text-lg mb-6 leading-relaxed hover:text-gray-200 transition-colors text-left">
-                        A full stack dveloper with experties in <HighlightedText text={"MERN Stack."}/>
+                        A full stack developer with expertise in <HighlightedText text={"MERN Stack."}/>
                     </p>
                     <p className="text-gray-300 text-lg mb-6 leading-relaxed hover:text-gray-200 transition-colors text-left">
                         Fluent in <HighlightedText text={"React, Node.js, Express.js"}/> and <HighlightedText text={"MongoDB."}/>
