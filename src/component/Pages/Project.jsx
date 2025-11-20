@@ -21,7 +21,7 @@ const Project = ()=>{
                 </h1>
                 
                 
-                <div className="flex flex-col lg:flex-row gap-16 w-full">
+                <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 gap-8 w-full">
                     {ProjectData.map((Project)=>{
                         return(
                             <ProjectCard
