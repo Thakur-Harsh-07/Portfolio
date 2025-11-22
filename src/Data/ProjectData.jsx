@@ -35,7 +35,7 @@ export const ProjectData = [
         id:4,
         name:"User Bank Management System",
         link:"https://user-bank-management.vercel.app/",
-        github:"https://github.com/Thakur-Harsh-07/UserBankManagementSystem",
+        github:"https://github.com/Thakur-Harsh-07/UserBankManagement",
         logo: logo4,
         desc: "A full-stack web application for managing bank users and their accounts. This system provides user authentication, bank account management, and administrative features. Role based access control ensures secure operations for both users and admins.",
         tech:["HTML", "CSS", "React", "Node.js", "Express", "MongoDB"]
