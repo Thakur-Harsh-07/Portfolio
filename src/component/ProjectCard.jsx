@@ -1,10 +1,23 @@
-import React from 'react'
+import React, { use, useEffect } from 'react'
 import { SiGithub } from "react-icons/si";
 import { FaExternalLinkAlt, FaStar} from "react-icons/fa";
 import { desc } from 'framer-motion/client';
+import { useState } from 'react';
 
 
-const ProjectCard = ({name, link, github, logo, desc, tech}) => {
+
+const ProjectCard = ({name, link, github, logos, desc, tech}) => {
+    const[Index, setIndex] = useState(0);
+    
+    useEffect(() => {   
+        const interval = setInterval(() => {
+            setIndex((prevIndex) => (prevIndex + 1) % logos.length);
+        }, 3000); // Change image every 3 seconds
+
+        return () => clearInterval(interval); // Cleanup on unmount
+    }, [logos.length]);
+   
+
   return (
     <div className="bg-gray-800/50 backdrop-blur-sm rounded-xl p-8 
                     hover:bg-gray-700/50 transition-all duration-300 
@@ -25,13 +38,27 @@ const ProjectCard = ({name, link, github, logo, desc, tech}) => {
 
         {/* Project Image */}
         <div className="relative w-full h-64 mb-6 overflow-hidden rounded-lg">
-            <img 
-                src={logo} 
-                alt={`${name} preview`}
-                className="w-full h-full object-cover transform  
-                         group-hover:scale-110 transition-all duration-500"
-            />
+           {
+            logos.map((logo, index) => (
+                <img 
+                    key={index}
+                    src={logo} 
+                    alt={`${name} Screenshot ${index + 1}`}
+                    className="w-full h-full object-cover 
+                    absolute top-0 left-0 
+                    opacity-0 group-hover:opacity-100 
+                    transition-opacity duration-500"
+                    style={{ opacity: index === Index ? 1 : 0 }}
+                  
+                   
+                />
+                
+            ))
+           }
+           
             <div className="absolute inset-0 bg-black/30 group-hover:bg-black/0 transition-all duration-500"></div>
+            
+            
         </div>
         {/* tech */}
         

@@ -29,7 +29,7 @@ const Project = ()=>{
                                 name={Project.name}
                                 link={Project.link}
                                 github={Project.github}
-                                logo={Project.logo}
+                                logos={Project.logo}
                                 desc= {Project.desc}
                                 tech = {Project.tech}
                             />
